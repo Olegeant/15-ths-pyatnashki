@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>JUST HAVE SOME FUN WITH US!</h1>
+
+      <ul class="buttons">
+        <li>
+          <input
+            class="field-size"
+            type="number"
+            min="4"
+            max="10"
+            step="1"
+            value="4"
+            data-input
+          />
+        </li>
+        <li>
+          <button type="button" class="button" data-action="render">
+            Render
+          </button>
+        </li>
+        <li>
+          <button type="button" class="button" data-action="shuffle">
+            Shuffle
+          </button>
+        </li>
+        <li>
+          <button type="button" class="button" data-action="start">
+            Let's go!
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="button"
+            data-action="masterclass"
+            disabled
+          >
+            Show masterclass!
+          </button>
+        </li>
+      </ul>
+
+      <div class="field" data-field></div>
+
+      <div class="info-block">
+        <div class="counter">
+          Moves: <span data-action="movecounter"></span>
+        </div>
+        <div class="counter">Time: <span data-action="timecounter"></span></div>
+      </div>
+      <div data-movecounter></div>
+
+      <script src="./js/main.js" type="module"></script>
+    </div>
+  </body>
+</html>
