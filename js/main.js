@@ -86,6 +86,7 @@ const shuffleField = (prevNum = 0) => {
   while (true) {
     const shift = randomDirection();
     const celToMove =
+      fieldMap[zeroPos.row + shift.row] &&
       fieldMap[zeroPos.row + shift.row][zeroPos.col + shift.col];
 
     if (
